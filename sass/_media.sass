@@ -56,6 +56,22 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .hotel
+    &-info
+      &-wrapper
+        justify-content: space-between
+      &-left
+        min-width: 100%
+        &__stars
+          flex-basis: auto
+        &__name
+          flex-basis: 100%
+        &__offer
+          order: -1
+          margin-left: 0
+      &-right
+        display: none
+
 @media (max-width: 320px)
   .container
     max-width: 280px
