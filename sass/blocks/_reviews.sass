@@ -1,0 +1,93 @@
+.reviews
+  background-color: $backside
+  padding: 40px 0 70px 0
+  &__text
+    text-align: center
+    font-size: 36px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    text-transform: uppercase
+    margin-bottom: 70px
+    margin-top: 0
+  &-slider
+    &-slide
+      &__wrapper
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: $white
+        margin: 45px auto 0
+        padding-bottom: 30px
+        border-radius: 8px
+        width: 730px
+        &:after
+          position: absolute
+          content: ''
+          width: 70px
+          height: 47px
+          background-image: url(../img/quotes-left.svg)
+          background-repeat: no-repeat
+          left: 64px
+          top: 13px
+        &::before
+          position: absolute
+          content: ''
+          width: 70px
+          height: 47px
+          background-image: url(../img/quotes-right.svg)
+          background-repeat: no-repeat
+          right: 60px
+          bottom: 113px
+      &__profile
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__avatar
+        height: 90px
+        width: 90px
+        object-fit: cover
+        border-radius: 45px
+        margin-top: -45px
+        margin-bottom: 9px
+      &__name
+        font-size: 12px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        color: $primary
+        margin-bottom: 10px
+      &__date
+        font-size: 10px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+      &__stars
+        margin-bottom: 33px
+      &__text
+        margin: 0
+        width: 537px
+        font-size: 12px
+        font-style: normal
+        font-weight: 400
+        line-height: 160%
+    &__button
+      position: absolute
+      height: 30px
+      width: 30px
+      border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 30px
+      background-color: transparent
+      transform: translateY(-50%)
+      top: 50%
+      z-index: 99
+      &--prev
+        left: 0
+        background-image: url(../img/chevron-left.svg)
+      &--next
+        right: 0
+        background-image: url(../img/chevron-right.svg)
