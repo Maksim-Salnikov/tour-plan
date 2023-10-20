@@ -109,38 +109,37 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider">
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
+          <div class="slider hotel-slider">
+            <div class="swiper hotel-swiper">
               <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="img/Slide 1.jpg"
                     alt="slider"
-                    class="swiper-slide__image"
+                    class="swiper-slide__image hotel-slider__image"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="img/Slide 1.jpg"
                     alt="slider"
-                    class="swiper-slide__image"
+                    class="swiper-slide__image hotel-slider__image"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="img/Slide 1.jpg"
                     alt="slider"
-                    class="swiper-slide__image"
+                    class="swiper-slide__image hotel-slider__image"
                   />
                 </div>
               </div>
-
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <button
+                class="hotel-slider__button hotel-slider__button--prev"
+              ></button>
+              <button
+                class="hotel-slider__button hotel-slider__button--next"
+              ></button>
             </div>
           </div>
           <!-- /.slider -->
@@ -217,6 +216,12 @@
       </div>
     </section>
     <!-- /.newsletter -->
+    <section class="reviews">
+      <div class="container">
+        <h1 class="reviews_text">What people think about us</h1>
+        <div class="slider"></div>
+      </div>
+    </section>
     <script src="
       https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
