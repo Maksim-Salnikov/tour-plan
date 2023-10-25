@@ -1034,7 +1034,7 @@ template {
 
 .footer {
   padding-top: 107px;
-  padding-bottom: 102px;
+  padding-bottom: 45px;
   background-color: #0A223D;
   color: #FFFFFF;
 }
@@ -1191,6 +1191,28 @@ template {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.footer-disclamer {
+  grid-column: 2/4;
+  grid-row: 6/7;
+  margin: 0 auto;
+  padding: 0;
+  align-self: flex-end;
+}
+.footer-disclamer-list {
+  list-style: none;
+  display: inline;
+  margin: 0 5px;
+}
+.footer-disclamer-list__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer-back-image {
+  grid-column: 4/5;
+  grid-row: 6/7;
+  align-self: flex-end;
+  margin-left: auto;
 }
 
 @media (max-width: 1200px) {
