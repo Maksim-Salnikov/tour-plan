@@ -26,3 +26,11 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 });
+
+var menuButtton = document.querySelector(".menu-button");
+menuButtton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+  .querySelector(".navbar-menu")
+  .classList.toggle("navbar-menu--visible")
+});

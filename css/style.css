@@ -360,6 +360,9 @@ template {
   text-transform: uppercase;
   font-size: 14px;
 }
+.navbar-buttom__item--visible {
+  display: none;
+}
 
 .logo {
   width: 177px;
@@ -1409,11 +1412,53 @@ template {
   }
 }
 @media (max-width: 576px) {
+  body {
+    padding-top: 98px;
+  }
   .container {
     max-width: 520px;
   }
-  .navbar-menu, .navbar-top__search, .navbar__profile {
+  .navbar--mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar-top__search--visible, .navbar-top__profile--visible {
     display: none;
+  }
+  .navbar-top__profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-top__profile--avatar {
+    margin-bottom: 10px;
+  }
+  .navbar-top__profile--username {
+    color: #FFFFFF;
+  }
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 98px;
+  }
+  .navbar-menu--visible {
+    display: block;
+  }
+  .navbar-buttom {
+    flex-direction: column;
+  }
+  .navbar-buttom__item {
+    margin-bottom: 20px;
+  }
+  .navbar-buttom__item--visible {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
   }
   .logo {
     width: 99px;
@@ -1545,6 +1590,9 @@ template {
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
+  }
+  .search__input {
+    width: 100%;
   }
   .hotel-slider {
     height: 179px;

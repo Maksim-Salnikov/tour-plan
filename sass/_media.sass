@@ -160,11 +160,47 @@
       grid-column: 1 / 2
       margin: 0 auto 0 0
 @media (max-width: 576px)
+  body
+    padding-top: 98px
   .container
     max-width: 520px
   .navbar
-    &-menu, &-top__search, &__profile
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-top
+      &__search, &__profile
+        &--visible
+          display: none
+      &__profile
+        display: flex
+        flex-direction: column
+        &--avatar
+          margin-bottom: 10px
+        &--username
+          color: $white
+
+    &-menu
       display: none
+      position: fixed
+      right: 0
+      left: 0
+      bottom: 0
+      top: 98px
+      &--visible
+        display: block
+    &-buttom
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--visible
+          display: block
+          margin: 0
+          margin-bottom: 20px
   .logo
     width: 99px
   .menu
@@ -274,6 +310,9 @@
 @media (max-width: 320px)
   .container
     max-width: 280px
+  .search
+    &__input
+      width: 100%
   .hotel
     &-slider
       height: 179px
