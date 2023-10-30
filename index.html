@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
@@ -205,7 +204,9 @@
                   <span class="booking-middle-number__text">12100</span>
                 </a>
               </div>
-              <button class="button booking-bot">View Other Options</button>
+              <button data-toggle="modal" class="button booking-bot">
+                View Other Options
+              </button>
             </div>
             <div class="map">
               <iframe
@@ -798,21 +799,21 @@
             <form action="" class="footer-message-form">
               <input
                 type="text"
-                class="footer-message-form__input"
+                class="input footer-message-form__input"
                 placeholder="Your Full Name*"
               />
               <input
                 type="text"
-                class="footer-message-form__input"
+                class="input footer-message-form__input"
                 placeholder="Phone Number*"
               />
               <textarea
                 cols="30"
                 rows="10"
-                class="footer-message-form__message"
+                class="message footer-message-form__message"
                 placeholder="Message"
               ></textarea>
-              <button class="footer-message-form__button">Send</button>
+              <button class="button footer-message-form__button">Send</button>
               <span class="footer-message-form__info">* Required Fields</span>
             </form>
           </div>
@@ -842,6 +843,37 @@
       </div>
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal-backside"></div>
+      <div class="modal-block">
+        <button class="modal-block__close-button">
+          <img src="../img/close.svg" alt="icon: close" />
+        </button>
+        <h3 class="modal-block__tittle">booking</h3>
+        <form action="" class="modal-block-form">
+          <input
+            type="text"
+            class="input modal-block-form__input"
+            placeholder="Your Full Name*"
+          />
+          <input
+            type="text"
+            class="input modal-block-form__input"
+            placeholder="Phone Number*"
+          />
+          <textarea
+            cols="30"
+            rows="10"
+            class="message modal-block-form__message"
+            placeholder="Message"
+          ></textarea>
+          <button class="button modal-block-form__button">Send</button>
+          <span class="modal-block-form__info">* Required Fields</span>
+        </form>
+      </div>
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="
       https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
