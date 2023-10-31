@@ -1305,6 +1305,8 @@ template {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  animation: shakeX;
+  animation-duration: 1s;
 }
 
 @media (max-width: 1200px) {

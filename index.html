@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -228,7 +233,11 @@
       <div class="container">
         <h1 class="packages__tittle">Other Packages</h1>
         <div class="packages-grid">
-          <div class="packages-grid-block__big">
+          <div
+            class="packages-grid-block__big"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img
               src="../img/packages-1.jpeg"
               alt="packages-1"
@@ -284,7 +293,11 @@
             </div>
           </div>
           <!-- /.packages-grid-block__big -->
-          <div class="packages-grid-block__small">
+          <div
+            class="packages-grid-block__small"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <img
               src="../img/packages-2.jpeg"
               alt=""
@@ -326,7 +339,11 @@
             </div>
           </div>
           <!-- /.packages-grid-block__small -->
-          <div class="packages-grid-block__small">
+          <div
+            class="packages-grid-block__small"
+            data-aos="fade-up-right"
+            data-aos-delay="200"
+          >
             <img
               src="../img/packages-3.jpeg"
               alt=""
@@ -368,7 +385,11 @@
             </div>
           </div>
           <!-- /.packages-grid-block__small -->
-          <div class="packages-grid-block__small">
+          <div
+            class="packages-grid-block__small"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
               src="../img/packages-4.jpeg"
               alt=""
@@ -410,7 +431,11 @@
             </div>
           </div>
           <!-- /.packages-grid-block__small -->
-          <div class="packages-grid-block__small">
+          <div
+            class="packages-grid-block__small"
+            data-aos="fade-up-left"
+            data-aos-delay="200"
+          >
             <img
               src="../img/packages-5.jpeg"
               alt=""
@@ -456,13 +481,22 @@
       </div>
     </section>
     <!-- /.packages -->
-    <section class="newsletter">
+    <section class="newsletter" data-aos="zoom-in" data-aos-delay="100">
       <div class="newsletter-wrapper">
-        <div class="newsletter-text">
+        <div
+          class="newsletter-text"
+          data-aos="fade-up-right"
+          data-aos-delay="300"
+        >
           <span class="newsletter-text__little">subscribe to our</span>
           <strong class="newsletter-text__strong">Newsletter</strong>
         </div>
-        <form action="#" class="newsletter-subscribe">
+        <form
+          action="#"
+          class="newsletter-subscribe"
+          data-aos="fade-up-left"
+          data-aos-delay="300"
+        >
           <input
             type="text"
             class="newsletter-subscribe__input"
@@ -476,7 +510,7 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__text">What people think about&nbspus</h2>
-        <div class="swiper reviews-slider">
+        <div class="swiper reviews-slider" data-aos="fade-up">
           <div class="swiper-wrapper">
             <div class="swiper-slide reviews-slider-slide">
               <div class="reviews-slider-slide__wrapper">
@@ -596,7 +630,11 @@
       <div class="container">
         <h2 class="activities-tittle">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -607,7 +645,11 @@
             >
             <button class="activities-card__button">Book Now</button>
           </div>
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.png"
               alt="Gymkhana club golf course"
@@ -616,7 +658,11 @@
             <span class="activities-card__text">Gymkhana club golf course</span>
             <button class="activities-card__button">Book Now</button>
           </div>
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -627,7 +673,11 @@
             >
             <button class="activities-card__button">Book Now</button>
           </div>
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -644,7 +694,7 @@
     <!-- activites -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-grid">
+        <div class="footer-grid" data-aos="zoom-in" data-aos-delay="100">
           <img
             src="../img/vertical-logo.png"
             alt="Logo: Best Tour Plan"
@@ -810,7 +860,7 @@
               <div class="footer-message-form__group">
                 <input
                   type="text"
-                  class="input footer-message-form__input"
+                  class="input phone footer-message-form__input"
                   placeholder="Phone Number*"
                   name="phone"
                   required
@@ -901,6 +951,7 @@
       https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
