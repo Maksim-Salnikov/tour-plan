@@ -1185,10 +1185,13 @@ template {
   justify-content: space-between;
   align-items: center;
 }
-.footer-message-form__input {
-  height: 50px;
+.footer-message-form__group {
+  min-eight: 50px;
   width: 255px;
   margin-bottom: 15px;
+}
+.footer-message-form__input {
+  width: 100%;
 }
 .footer-message-form__message {
   flex-basis: 100%;
@@ -1268,7 +1271,7 @@ template {
   z-index: 102;
 }
 .modal-block__tittle {
-  margin: 0 0 15px 0;
+  margin: 0;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -1278,12 +1281,15 @@ template {
 }
 .modal-block-form__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .modal-block-form__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.modal-block-form__button {
+  margin-top: 15px;
 }
 .modal-block-form__info {
   font-size: 12px;
@@ -1291,6 +1297,14 @@ template {
   font-weight: 700;
   line-height: normal;
   margin-left: 40px;
+}
+
+.invalid {
+  color: #EC1F46;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (max-width: 1200px) {
@@ -1472,7 +1486,7 @@ template {
     grid-row: 7/8;
     grid-column: 1/2;
   }
-  .footer-message-form__input {
+  .footer-message-form__group {
     flex-basis: 100%;
   }
   .footer-disclamer {

@@ -55,5 +55,23 @@ $(document).ready(function () {
     modalBackside.removeClass("modal-backside--visible");
     modalBlock.removeClass("modal-block--visible");
   }
-
+  // Обработка форм
+  $(".form").each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Пожалуйста введите свое имя",
+          minlength: "Имя должно быть длиннее 4 символов"
+        },
+        phone: {
+          required: "Пожалуйста введите свой номер телефона"
+        },
+        email: {
+          required: "Пожалуйста введите свой почтовый адресс",
+          email: "Почтовый адресс должен быть формата name@domain.com"
+        },
+      },
+    });
+  });
 });

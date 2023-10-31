@@ -796,17 +796,26 @@
           <!-- /.footer-contacts -->
           <div class="footer-message">
             <h3 class="footer-message__tittle">Send us a message</h3>
-            <form action="" class="footer-message-form">
-              <input
-                type="text"
-                class="input footer-message-form__input"
-                placeholder="Your Full Name*"
-              />
-              <input
-                type="text"
-                class="input footer-message-form__input"
-                placeholder="Phone Number*"
-              />
+            <form action="" class="footer-message-form form">
+              <div class="footer-message-form__group">
+                <input
+                  type="text"
+                  class="input footer-message-form__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="4"
+                />
+              </div>
+              <div class="footer-message-form__group">
+                <input
+                  type="text"
+                  class="input footer-message-form__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 cols="30"
                 rows="10"
@@ -850,16 +859,30 @@
           <img src="../img/close.svg" alt="icon: close" />
         </button>
         <h3 class="modal-block__tittle">booking</h3>
-        <form action="" class="modal-block-form">
+        <form action="" class="modal-block-form form">
           <input
             type="text"
             class="input modal-block-form__input"
             placeholder="Your Full Name*"
+            name="name"
+            minlength="4"
+            required
           />
           <input
-            type="text"
+            type="phone"
             class="input modal-block-form__input"
             placeholder="Phone Number*"
+            name="phone"
+            minlength="4"
+            required
+          />
+          <input
+            type="email"
+            class="input modal-block-form__input"
+            placeholder="Email*"
+            name="email"
+            minlength="4"
+            required
           />
           <textarea
             cols="30"
@@ -876,6 +899,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="
       https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
